@@ -31,7 +31,7 @@ export default function Hero() {
         <button className="hero-demo-button">Peça uma demonstração!</button>
       </div>
       <div>
-        <img src={stockphotohero} alt="foto de um homem apontado para o cabeçalho da página"></img>
+        <img src={stockphotohero} alt="foto de um homem apontado o dedo para o cabeçalho da página"></img>
       </div>
     </section>
   );
