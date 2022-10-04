@@ -1,8 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
 import "./DemoModal.css";
-import FormularioRev from "../FormularioRev.js";
-import demoFoto from "./demoFoto.jpg";
+import FormularioRev from "./FormularioRev.js";
+import demoFoto from "../../assets/demoFoto.jpg";
 
 export default function DemoModal(props) {
   return (

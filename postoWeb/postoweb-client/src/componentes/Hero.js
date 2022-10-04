@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import DemoModalButton from "./Modals/DemoModalButton";
 import "./Hero.css";
-import stockphotohero from '../stock-photo-hero.jpeg';
+import stockphotohero from '../assets/stock-photo-hero.jpeg';
 
 
 export default function Hero() {

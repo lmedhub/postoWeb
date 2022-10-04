@@ -4,13 +4,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Produtos.css";
 
-import webpdv from "../carousel-images/pdv.jpg";
-import webposto from "../carousel-images/Posto.jpg";
-import webpay from "../carousel-images/webPosto_pay.jpg";
-import webconv from "../carousel-images/webConveniencia.jpg";
-import webfrota from "../carousel-images/webFrota.jpg";
-import webmobile from "../carousel-images/webPosto_mobile.jpg";
-import qualitybank from "../carousel-images/qualityBank.jpg";
+import webpdv from "../assets/carousel-images/pdv.jpg";
+import webposto from "../assets/carousel-images/Posto.jpg";
+import webpay from "../assets/carousel-images/webPosto_pay.jpg";
+import webconv from "../assets/carousel-images/webConveniencia.jpg";
+import webfrota from "../assets/carousel-images/webFrota.jpg";
+import webmobile from "../assets/carousel-images/webPosto_mobile.jpg";
+import qualitybank from "../assets/carousel-images/qualityBank.jpg";
 
 export default function Produtos(props) {
   var settings = {

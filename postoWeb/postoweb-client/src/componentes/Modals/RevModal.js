@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "react-modal";
 import "./RevModal.css";
 import FormularioRev from "./FormularioRev.js";
-import revFoto from "../revendedor.jpg";
+import revFoto from "../../assets/revendedor.jpg";
 
 export default function RevModal(props) {
   return (

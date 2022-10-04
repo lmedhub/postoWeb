@@ -1,8 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
 import "./Navbar.css";
-import logo from "../postoweblogo.jpg";
-import RevModalButton from "./RevModalButton";
+import logo from "../assets/postoweblogo.jpg";
+import RevModalButton from "./Modals/RevModalButton";
 import DemoModalButton from "./Modals/DemoModalButton";
 
 Modal.setAppElement("#root");
