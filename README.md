@@ -1,6 +1,6 @@
 # postoWeb
 
-Esse é um clone inacabado do site https://www.webposto.com.br/, feito por motivos de aprendizado.
+Esse é um clone inacabado do site https://www.webposto.com.br/, feito com o objetivo de aprendizado.
 
 É feito em ReactJS e utiliza as bibliotecas react-modal, AOS, react-slick, Axios e Express.
 
