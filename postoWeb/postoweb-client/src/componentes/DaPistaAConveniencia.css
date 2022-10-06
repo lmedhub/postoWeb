@@ -32,4 +32,11 @@
 
 .numeros-ul {
     columns: 2;
+    list-style: none;
 }
+
+.list-svg {
+    filter: invert(17%) sepia(93%) saturate(1328%) hue-rotate(201deg) brightness(94%) contrast(94%);
+    width: 42px;
+}
+

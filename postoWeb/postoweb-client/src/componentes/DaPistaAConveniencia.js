@@ -3,6 +3,10 @@ import "./DaPistaAConveniencia.css";
 import DemoModalButton from "./Modals/DemoModalButton";
 
 import hero2stockman from "../assets/daPista-stock.jpg";
+import chartSVG from "../assets/chart-line-solid.svg";
+import userSVG from "../assets/user-group-solid.svg";
+import handSVG from "../assets/hand-holding-heart-solid.svg";
+import locationSVG from "../assets/location-dot-solid.svg";
 
 export default function DaPistaAConveniencia() {
   const removePCsymbol = true;
@@ -53,16 +57,30 @@ export default function DaPistaAConveniencia() {
           </h2>
           <ul className="numeros-ul">
             <li>
-              <b>700 Milhões</b> <br /> de vendas processadas
+              <span>
+                <img src={chartSVG} className="list-svg" />
+                <b>700 Milhões</b> <br /> de vendas processadas
+              </span>
             </li>
             <li>
-              + de <b>4.000</b> <br /> clientes atendidos
+              <span>
+                <img src={handSVG} className="list-svg" />
+                <>
+                  + de <b>4.000</b> <br /> clientes atendidos
+                </>
+              </span>
             </li>
             <li>
-              + de <b>70.000</b> <br /> usuários cadastrados
+              <span>
+                <img src={userSVG} className="list-svg" />+ de <b>70.000</b>{" "}
+                <br /> usuários cadastrados
+              </span>
             </li>
             <li>
-              + de <b>55</b> <br /> revendas em todo Brasil
+              <span>
+                <img src={locationSVG} className="list-svg" />+ de <b>55</b>{" "}
+                <br /> revendas em todo Brasil
+              </span>
             </li>
           </ul>
         </div>

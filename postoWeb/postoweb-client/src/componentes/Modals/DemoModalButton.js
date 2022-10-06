@@ -13,6 +13,7 @@ export default function DemoModalButton(props) {
 
   return (
     <div className="demo-button-container">
+
       <button className="demo-button" onClick={toggleModal}>
         {removePCsymbol ? "" : <i className="fas fa-tv"></i>}Peça uma demonstração!
       </button>
