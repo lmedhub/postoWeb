@@ -4,6 +4,7 @@
     margin-top: 40px;
     background-image: url("../assets/daPista-background.jpg");
     background-size: contain;
+    overflow: hidden;
 }
 
 .esquerda img {
@@ -60,7 +61,7 @@
     img#hero2stockman {
       display: none;
     }
-    .direita-pista {
+    .direita {
         float: center;
         width: 75%;
     }

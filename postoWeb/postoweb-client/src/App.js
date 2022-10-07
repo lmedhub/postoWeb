@@ -8,7 +8,7 @@ import DaPistaAConveniencia from "./componentes/DaPistaAConveniencia";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <Hero />
       <Produtos />
