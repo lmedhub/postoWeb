@@ -7,8 +7,7 @@
   align-items: center;
   font-family: "Roboto";
   z-index: 2;
-  overflow: auto;
-  
+  overflow: hidden;
 }
 
 .logo {

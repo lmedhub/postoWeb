@@ -14,9 +14,7 @@ export default function RevModal(props) {
       overlayClassName="revModalOverlay"
     >
       <div className="modal-conteudo">
-        <div className="esquerda">
           <img src={revFoto} className="revFoto"></img>
-        </div>
         <div className="direita">
           <button onClick={props.toggleModal} className="close-modal-button">
             X

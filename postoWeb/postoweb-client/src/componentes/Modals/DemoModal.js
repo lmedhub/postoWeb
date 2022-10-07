@@ -14,9 +14,9 @@ export default function DemoModal(props) {
       overlayClassName="demoModalOverlay"
     >
       <div className="modal-conteudo">
-        <div className="esquerda">
+
           <img src={demoFoto} className="revFoto"></img>
-        </div>
+
         <div className="direita">
           <button onClick={props.toggleModal} className="close-modal-button">
             X
