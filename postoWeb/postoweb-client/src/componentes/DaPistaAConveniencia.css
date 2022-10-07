@@ -1,7 +1,7 @@
 .hero-2-container {
     width: 100%;
     height:560px;
-    margin-top: 20px;
+    margin-top: 40px;
     background-image: url("../assets/daPista-background.jpg");
     background-size: contain;
 }
@@ -14,6 +14,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-right: 2.5rem;
+    margin-top: 10px;
+
 }
 
 .titulo-container {
@@ -38,5 +41,28 @@
 .list-svg {
     filter: invert(17%) sepia(93%) saturate(1328%) hue-rotate(201deg) brightness(94%) contrast(94%);
     width: 42px;
+    margin-right: 20px;
 }
 
+.num-li-span {
+    display: inline-flex;
+    color: rgb(112, 112, 112)
+}
+
+.num-li-span-top {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: inline-flex;
+    color: rgb(112, 112, 112)
+}
+
+
+@media (max-width:1200px) {
+    img#hero2stockman {
+      display: none;
+    }
+    .direita {
+        float: center;
+        width: 75%;
+    }
+  }

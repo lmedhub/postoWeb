@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from 'aos';
+
 import "./DaPistaAConveniencia.css";
 import DemoModalButton from "./Modals/DemoModalButton";
 
@@ -9,15 +11,21 @@ import handSVG from "../assets/hand-holding-heart-solid.svg";
 import locationSVG from "../assets/location-dot-solid.svg";
 
 export default function DaPistaAConveniencia() {
+
   const removePCsymbol = true;
+
+  React.useEffect(() => {
+    AOS.init({ duration : 1000 });
+  }, [])
+
 
   return (
     <section className="hero-2-container">
       <span className="esquerda">
-        <img src={hero2stockman} />
+        <img src={hero2stockman} id="hero2stockman" />
       </span>
       <span className="direita">
-        <div className="titulo-container">
+        <div className="titulo-container" data-aos="fade-right">
           <hr className="dapista-hr"></hr>
           <div className="titulo">
             <h2
@@ -45,7 +53,7 @@ export default function DaPistaAConveniencia() {
             <DemoModalButton removePCsymbol={true} />
           </div>
         </div>
-        <div className="nossos-numeros">
+        <div className="nossos-numeros" data-aos="zoom-in">
           <h2
             style={{
               color: "darkslateblue",
@@ -57,29 +65,47 @@ export default function DaPistaAConveniencia() {
           </h2>
           <ul className="numeros-ul">
             <li>
-              <span>
+              <span className="num-li-span-top">
                 <img src={chartSVG} className="list-svg" />
-                <b>700 Milhões</b> <br /> de vendas processadas
+                <p>
+                  <b style={{ fontSize: "24px", color: "black" }}>700</b>{" "}
+                  <b style={{ fontSize: "19px", color: "black" }}>Milhões</b>{" "}
+                  <br /> de vendas processadas
+                </p>
               </span>
             </li>
             <li>
-              <span>
+              <span className="num-li-span">
                 <img src={handSVG} className="list-svg" />
-                <>
-                  + de <b>4.000</b> <br /> clientes atendidos
-                </>
+                <p>
+                  <b style={{ fontSize: "19px", color: "#3b3a3a" }}>+ de</b>{" "}
+                  <b style={{ fontSize: "24px", color: "black" }}>4.000</b>{" "}
+                  <br /> clientes atendidos
+                </p>
               </span>
             </li>
             <li>
-              <span>
-                <img src={userSVG} className="list-svg" />+ de <b>70.000</b>{" "}
-                <br /> usuários cadastrados
+              <span className="num-li-span-top">
+                <img src={userSVG} className="list-svg" />
+                <p>
+                  <b style={{ fontSize: "19px", color: "#3b3a3a" }}>+ de</b>{" "}
+                  <b style={{ fontSize: "24px", color: "black" }}>70 mil</b>{" "}
+                  <br /> usuários cadastrados
+                </p>
               </span>
             </li>
             <li>
-              <span>
-                <img src={locationSVG} className="list-svg" />+ de <b>55</b>{" "}
-                <br /> revendas em todo Brasil
+              <span className="num-li-span">
+                <img
+                  src={locationSVG}
+                  className="list-svg"
+                  style={{ width: "30px" }}
+                />
+                <p>
+                  <b style={{ fontSize: "19px", color: "#3b3a3a" }}>+ de</b>{" "}
+                  <b style={{ fontSize: "24px", color: "black" }}>55</b> <br />{" "}
+                  revendas em todo Brasil
+                </p>
               </span>
             </li>
           </ul>
