@@ -1,83 +1,96 @@
 .produtos-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 85px;
-    font-family: 'Roboto';
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 85px;
+  font-family: "Roboto";
 }
 
 .produtos-titulo {
-    color: rgb(24, 64, 130);
-    margin: 0px;
-    font-weight: 400;
-    line-height: 1;
-    font-size: 2em;
+  color: rgb(24, 64, 130);
+  margin: 0px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 2em;
 }
 
 .produtos-subtitulo {
-    color: rgb(59,58,58);
-    margin: 0.5rem 0px;
-    font-weight: 500;
-    line-height: 1;
-    font-size: 2.2em;
+  color: rgb(59, 58, 58);
+  margin: 0.5rem 0px;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 2.2em;
 }
 
 .produtos-hr {
-    width: 8rem;
-    border-radius: 8px;
-    background: rgb(237, 28, 36);
-    box-shadow: rgb(237 28 36) 0px 0px 30px;
-    border: 2px solid rgb(237, 28, 36);
+  width: 8rem;
+  border-radius: 8px;
+  background: rgb(237, 28, 36);
+  box-shadow: rgb(237 28 36) 0px 0px 30px;
+  border: 2px solid rgb(237, 28, 36);
 }
 
 .produtos-carousel {
-    height: 450px;
+  height: 450px;
 }
 
 .imagem-carousel {
-    height: 400px;
-    width: 305px;
-    border-radius: 15px 15px 0px 15px;
-    transition: 0.3s ease-out;
-    margin: 25px 17px 25px 17px;
+  height: 400px;
+  width: 305px;
+  border-radius: 15px 15px 0px 15px;
+  transition: 0.3s ease-out;
+  margin: 25px 17px 25px 17px;
 }
 
 .imagem-carousel:hover {
-    border-radius: 15px 15px 0px 15px;
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.imagem-carousel:hover + .imagem-desc {
+  bottom: 100px;
+  transition: 0.5s;
 }
 
 .carousel-item-container {
-    position: relative;
-    color: white;
+  position: relative;
+  color: white;
 }
 
 .imagem-desc {
-    position: absolute;
-    bottom: 75px;
-    left: 35px;
-    right: 35px;
-    text-align: justify;
+  position: absolute;
+  bottom: 75px;
+  left: 35px;
+  right: 35px;
+  text-align: justify;
 }
 
 .imagem-desc h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .slick-prev {
-    left: 3% !important;
-    z-index: 1;
-    margin-left: -28px;
-  }
+  left: 3% !important;
+  z-index: 1;
+  margin-left: -28px;
+}
 .slick-next {
-    right: 3% !important;
-    z-index: 1;
-    margin-right: 14px;
-  }
+  right: 3% !important;
+  z-index: 1;
+  margin-right: 14px;
+  
+}
 
-.slick-next:before, .slick-prev:before {
-    font-size: 60px;
-    line-height: 1;
-    opacity: .75;
-    color: gray;
+.slick-next:before {
+  font-size: 60px;
+  line-height: 1;
+  opacity: 0.75;
+  color: red;
+  border-radius: 100%;
+}
+.slick-prev:before {
+  font-size: 60px;
+  line-height: 1;
+  opacity: 0.75;
+  color: red;
+  border-radius: 100%;
 }

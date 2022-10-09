@@ -34,7 +34,11 @@ export default function Produtos(props) {
       <div className="produtos-carousel">
         <Slider {...settings}>
           <div className="carousel-item-container">
-            <img className="imagem-carousel" src={webpdv} alt="notebook com PDV aberto"></img>
+            <img
+              className="imagem-carousel"
+              src={webpdv}
+              alt="notebook com PDV aberto"
+            ></img>
             <div className="imagem-desc">
               <h2>POSTOWEB PDV</h2>
               <p>
@@ -44,7 +48,11 @@ export default function Produtos(props) {
             </div>
           </div>
           <div className="carousel-item-container">
-            <img className="imagem-carousel" src={webposto} alt="um posto de combustíveis"></img>
+            <img
+              className="imagem-carousel"
+              src={webposto}
+              alt="um posto de combustíveis"
+            ></img>
             <div className="imagem-desc">
               <h2>POSTOWEB</h2>
               <p>
@@ -54,7 +62,11 @@ export default function Produtos(props) {
             </div>
           </div>
           <div className="carousel-item-container">
-            <img className="imagem-carousel" src={webpay} alt="uma mulher utilizando o postoweb pay"></img>
+            <img
+              className="imagem-carousel"
+              src={webpay}
+              alt="uma mulher utilizando o postoweb pay"
+            ></img>
             <div className="imagem-desc">
               <h2>POSTOWEB PAY</h2>
               <p>
@@ -64,7 +76,11 @@ export default function Produtos(props) {
             </div>
           </div>
           <div className="carousel-item-container">
-            <img className="imagem-carousel" src={webmobile} alt="celular com postoweb mobile aberto"></img>
+            <img
+              className="imagem-carousel"
+              src={webmobile}
+              alt="celular com postoweb mobile aberto"
+            ></img>
             <div className="imagem-desc">
               <h2>POSTOWEB MOBILE</h2>
               <p>
@@ -74,7 +90,11 @@ export default function Produtos(props) {
             </div>
           </div>
           <div className="carousel-item-container">
-            <img className="imagem-carousel" src={webfrota} alt="gráficos sendo visualizados em um celular e em um notebook"></img>
+            <img
+              className="imagem-carousel"
+              src={webfrota}
+              alt="gráficos sendo visualizados em um celular e em um notebook"
+            ></img>
             <div className="imagem-desc">
               <h2>POSTOWEB</h2>
               <p>
@@ -84,7 +104,11 @@ export default function Produtos(props) {
             </div>
           </div>
           <div className="carousel-item-container">
-            <img className="imagem-carousel" src={qualitybank} alt="postoweb pix no computador"></img>
+            <img
+              className="imagem-carousel"
+              src={qualitybank}
+              alt="postoweb pix no computador"
+            ></img>
             <div className="imagem-desc">
               <h2 className="imagem-desc-titulo">POSTOWEB PIX</h2>
               <p>
@@ -94,7 +118,11 @@ export default function Produtos(props) {
             </div>
           </div>
           <div className="carousel-item-container">
-            <img className="imagem-carousel" src={webconv} alt="mulher atrás de um computador com pdv aberto"></img>
+            <img
+              className="imagem-carousel"
+              src={webconv}
+              alt="mulher atrás de um computador com pdv aberto"
+            ></img>
             <div className="imagem-desc">
               <h2 className="imagem-desc-titulo">POSTO CONVENIÊNCIA</h2>
               <p>

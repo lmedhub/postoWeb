@@ -1,11 +1,12 @@
 import React, {useState} from "react";
-import DemoModal from "./DemoModal.js";
+import Modal from "./Modal.js";
 import "./DemoModalButton.css";
 
 export default function DemoModalButton(props) {
 
   const removePCsymbol = (props.removePCsymbol)
   const [isOpen, setIsOpen] = useState(false);
+  const demoModal = true;
 
   function toggleModal() {
     setIsOpen(!isOpen);
@@ -17,7 +18,7 @@ export default function DemoModalButton(props) {
       <button className="demo-button" onClick={toggleModal}>
         {removePCsymbol ? "" : <i className="fas fa-tv"></i>}Peça uma demonstração!
       </button>
-      {isOpen && <DemoModal isOpen={isOpen} toggleModal={toggleModal} />}
+      {isOpen && <Modal isOpen={isOpen} toggleModal={toggleModal} demoModal={demoModal}/>}
     </div>
   );
 }

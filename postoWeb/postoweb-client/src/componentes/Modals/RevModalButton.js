@@ -1,10 +1,11 @@
 import React, {useState} from "react";
-import RevModal from "./RevModal.js";
+import Modal from "./Modal.js";
 import "./RevModalButton.css";
 
 export default function RevModalButton() {
 
   const [isOpen, setIsOpen] = useState(false);
+  const revModal = true;
 
   function toggleModal() {
     setIsOpen(!isOpen);
@@ -15,7 +16,7 @@ export default function RevModalButton() {
       <button className="revendedor-button" onClick={toggleModal}>
         <i className="fas fa-user-alt"></i>Seja um Revendedor
       </button>
-      {isOpen && <RevModal isOpen={isOpen} toggleModal={toggleModal} />}
+      {isOpen && <Modal isOpen={isOpen} toggleModal={toggleModal} revModal={revModal}/>}
     </div>
   );
 }
