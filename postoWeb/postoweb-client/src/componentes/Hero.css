@@ -5,6 +5,7 @@
     border-radius: 0px 0px 0px 80px;
     font-family: 'Roboto';
     display: inline-flex;
+    overflow: hidden;
 }
 
 .esquerda {

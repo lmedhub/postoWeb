@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import AOS from "aos";
-import "aos/dist/aos.css";
 import "./Produtos.css";
 
 import webpdv from "../assets/carousel-images/pdv.jpg";
