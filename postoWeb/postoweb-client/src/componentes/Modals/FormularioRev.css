@@ -56,11 +56,9 @@
 }
 
 .mostrarButton {
-    width: 50%;
+    width: 25%;
+    text-align: center;
 }
 
-.funcionarios {
-    display: flex;
-    flex-direction: column;
-}
+
 

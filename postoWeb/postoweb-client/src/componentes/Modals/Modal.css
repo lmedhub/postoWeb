@@ -6,7 +6,7 @@
     bottom: 35px;
     border: 1px solid #ccc;
     background: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
     border-radius: 4px;
     outline: none;
     padding: 20px;

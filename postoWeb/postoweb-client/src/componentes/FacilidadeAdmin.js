@@ -55,7 +55,7 @@ export default function FacilidadeAdmin() {
           }}
           className="slick-button"
         >
-          <i class="bi bi-laptop" />
+          <i className="bi bi-laptop" />
           Desktop
         </button>
         <button
@@ -64,7 +64,7 @@ export default function FacilidadeAdmin() {
           }}
           className="slick-button"
         >
-          <i class="bi bi-phone" />
+          <i className="bi bi-phone" />
           Mobile
         </button>
         <button
@@ -73,7 +73,7 @@ export default function FacilidadeAdmin() {
           }}
           className="slick-button"
         >
-          <i class="bi bi-phone-landscape" />
+          <i className="bi bi-phone-landscape" />
           POS
         </button>
         <button
@@ -82,7 +82,7 @@ export default function FacilidadeAdmin() {
           }}
           className="slick-button"
         >
-          <i class="bi bi-tv" />
+          <i className="bi bi-tv" />
           Totem
         </button>
         <button
@@ -91,7 +91,7 @@ export default function FacilidadeAdmin() {
           }}
           className="slick-button"
         >
-          <i class="bi bi-tablet" />
+          <i className="bi bi-tablet" />
           Tablet
         </button>
       </div>
