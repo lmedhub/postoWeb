@@ -12,8 +12,6 @@ import locationSVG from "../assets/location-dot-solid.svg";
 
 export default function DaPistaAConveniencia() {
 
-  const removePCsymbol = true;
-
   React.useEffect(() => {
     AOS.init({ duration : 1000 });
   }, [])
@@ -22,7 +20,7 @@ export default function DaPistaAConveniencia() {
   return (
     <section className="hero-2-container">
       <span className="esquerda">
-        <img src={hero2stockman} id="hero2stockman" />
+        <img src={hero2stockman} id="hero2stockman" alt="homem apontando para o lado direito" />
       </span>
       <span className="direita">
         <div className="titulo-container" data-aos="fade-right">
@@ -66,7 +64,7 @@ export default function DaPistaAConveniencia() {
           <ul className="numeros-ul">
             <li>
               <span className="num-li-span-top">
-                <img src={chartSVG} className="list-svg" />
+                <img src={chartSVG} className="list-svg" alt=""/>
                 <p>
                   <b style={{ fontSize: "24px", color: "black" }}>700</b>{" "}
                   <b style={{ fontSize: "19px", color: "black" }}>Milhões</b>{" "}
@@ -76,7 +74,7 @@ export default function DaPistaAConveniencia() {
             </li>
             <li>
               <span className="num-li-span">
-                <img src={handSVG} className="list-svg" />
+                <img src={handSVG} className="list-svg" alt=""/>
                 <p>
                   <b style={{ fontSize: "19px", color: "#3b3a3a" }}>+ de</b>{" "}
                   <b style={{ fontSize: "24px", color: "black" }}>4.000</b>{" "}
@@ -86,7 +84,7 @@ export default function DaPistaAConveniencia() {
             </li>
             <li>
               <span className="num-li-span-top">
-                <img src={userSVG} className="list-svg" />
+                <img src={userSVG} className="list-svg" alt=""/>
                 <p>
                   <b style={{ fontSize: "19px", color: "#3b3a3a" }}>+ de</b>{" "}
                   <b style={{ fontSize: "24px", color: "black" }}>70 mil</b>{" "}
@@ -100,6 +98,7 @@ export default function DaPistaAConveniencia() {
                   src={locationSVG}
                   className="list-svg"
                   style={{ width: "30px" }}
+                  alt=""
                 />
                 <p>
                   <b style={{ fontSize: "19px", color: "#3b3a3a" }}>+ de</b>{" "}

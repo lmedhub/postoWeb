@@ -4,13 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contatos from "./componentes/Contatos";
 import App from "./App";
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-
-      <Route path="contatos/" element={<Contatos />} />
+      <Route path="contatos" element={<Contatos />} />
     </Routes>
   </BrowserRouter>
 );

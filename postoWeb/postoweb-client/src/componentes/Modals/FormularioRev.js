@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Axios from "axios";
-import Contatos from "../Contatos";
 import "./FormularioRev.css";
-
 
 export default function FormularioRev() {
   const [nome, setNome] = useState("");
@@ -29,12 +27,6 @@ export default function FormularioRev() {
         },
       ]);
     });
-  }
-
-  function getContatos(id) {
-    Axios.get("http://localhost:3001/contatos", {}).then((response) =>
-      setListaContatos(response.data)
-    );
   }
 
   return (
@@ -89,24 +81,6 @@ export default function FormularioRev() {
           Enviar Solicitação
         </button>
       </form>
-      <div className="contatos">
-        <button className="mostrarButton" onClick={getContatos}>
-          Mostrar Contatos{" (Provisório)"}
-        </button>
-        {listaContatos.map((val, key) => {
-          return (
-            <>
-              <Contatos
-                nome={val.nome}
-                empresa={val.empresa}
-                cargo={val.cargo}
-                email={val.email}
-              />
-            </>
-            
-          );
-        })}
-      </div>
     </div>
   );
 }

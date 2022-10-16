@@ -18,6 +18,17 @@ export default function Produtos(props) {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    initialslide: 0,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
   };
 
   React.useEffect(() => {

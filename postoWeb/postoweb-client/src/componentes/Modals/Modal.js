@@ -5,7 +5,6 @@ import FormularioRev from "./FormularioRev.js";
 import revFoto from "../../assets/revendedor.jpg";
 import demoFoto from "../../assets/demoFoto.jpg";
 
-
 export default function Modall(props) {
   return (
     <Modal
@@ -17,7 +16,15 @@ export default function Modall(props) {
     >
       <div className="modal-conteudo">
         <div className="fundo-esquerda"></div>
-        {props.revModal ? <img src={revFoto} className="revFoto"/> : <img src={demoFoto} className="revFoto"/>}
+        {props.revModal ? (
+          <img src={revFoto} className="revFoto" alt="homem com notebook" />
+        ) : (
+          <img
+            src={demoFoto}
+            className="revFoto"
+            alt="notebook com graficos na tela"
+          />
+        )}
         <div className="direita">
           <button onClick={props.toggleModal} className="close-modal-button">
             X

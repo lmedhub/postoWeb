@@ -15,16 +15,16 @@ export default function Navbar() {
       <nav>
         <ul className="navbar-items">
           <li>
-            <a href="#">Inicio</a>
+            <a href="/#">Inicio</a>
           </li>
           <li>
-            <a href="#">Nossas Soluções</a>
+            <a href="/#">Nossas Soluções</a>
           </li>
           <li>
-            <a href="#">Conteúdos</a>
+            <a href="/#">Conteúdos</a>
           </li>
           <li>
-            <a href="#">Sobre nós</a>
+            <a href="/#">Sobre nós</a>
           </li>
           <li>
             <RevModalButton />

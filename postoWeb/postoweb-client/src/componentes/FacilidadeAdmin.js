@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState} from "react";
 import Slider from "react-slick";
 import AOS from "aos";
 import "./FacilidadeAdmin.css";
@@ -12,13 +12,20 @@ import admin5 from "../assets/carousel-images/dashboard-admin-5.jpg";
 export default function FacilidadeAdmin() {
   const sliderRef = useRef(null);
 
+  const [currSlide, setCurrSlide] = useState(0)
+
   var settings = {
     infinite: false,
     dots: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  };
+    afterChange(currentSlide) {
+      console.log("hit afterChange");
+      console.log("currentSlide: ", currentSlide)
+      setCurrSlide(currentSlide)    
+    },
+  }
 
   React.useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -49,68 +56,73 @@ export default function FacilidadeAdmin() {
         </p>
       </header>
       <div className="slider-menu">
-        <button
+        <li
           onClick={() => {
-            sliderRef.current.slickGoTo(0);
+            sliderRef.current.slickGoTo(0); 
+            setCurrSlide(0)
           }}
-          className="slick-button"
+          className={currSlide===0 ? "slick-button-active" : "slick-button"}
         >
           <i className="bi bi-laptop" />
           Desktop
-        </button>
-        <button
+        </li>
+        <li
           onClick={() => {
-            sliderRef.current.slickGoTo(1);
+            sliderRef.current.slickGoTo(1)
+            setCurrSlide(1)
           }}
-          className="slick-button"
+          className={currSlide===1 ? "slick-button-active" : "slick-button"}
         >
           <i className="bi bi-phone" />
           Mobile
-        </button>
-        <button
+        </li>
+        <li
           onClick={() => {
             sliderRef.current.slickGoTo(2);
+            setCurrSlide(2)
           }}
-          className="slick-button"
+          className={currSlide===2 ? "slick-button-active" : "slick-button"}
         >
-          <i className="bi bi-phone-landscape" />
+          <i className="bi bi-credit-card"/ >
           POS
-        </button>
-        <button
+        </li>
+        <li
           onClick={() => {
             sliderRef.current.slickGoTo(3);
+            setCurrSlide(3)
           }}
-          className="slick-button"
+          className={currSlide===3 ? "slick-button-active" : "slick-button"}
         >
           <i className="bi bi-tv" />
           Totem
-        </button>
-        <button
+        </li>
+        <li
           onClick={() => {
             sliderRef.current.slickGoTo(4);
+            setCurrSlide(4)
           }}
-          className="slick-button"
+          className={currSlide===4 ? "slick-button-active" : "slick-button"}
         >
           <i className="bi bi-tablet" />
           Tablet
-        </button>
+        </li>
       </div>
       <div className="gestao-container">
         <Slider {...settings} ref={sliderRef}>
           <article className="gestao-carousel-item">
-            <img src={admin1} />
+            <img src={admin1} alt="notebook" />
           </article>
           <article className="gestao-carousel-item">
-            <img src={admin2} />
+            <img src={admin2} alt="mobile"/>
           </article>
           <article className="gestao-carousel-item">
-            <img src={admin3} />
+            <img src={admin3} alt="maquininha"/>
           </article>
           <article className="gestao-carousel-item">
-            <img src={admin4} />
+            <img src={admin4} alt="totem"/>
           </article>
           <article className="gestao-carousel-item">
-            <img src={admin5} />
+            <img src={admin5} alt="tablet"/>
           </article>
         </Slider>
       </div>
