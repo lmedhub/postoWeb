@@ -11,20 +11,24 @@ export default function Contatos(props) {
     );
   }
   return (
-    <div className="contacts-container">
+    <>
+      <header className="admin-header">ADMIN</header>
       {getContatos()}
       {listContacts?.map((val, key) => {
         return (
-          <ul className="contact-list">
+          <ul className="contact-card">
             <li className="contact" key={val.id}>
-              nome={val.nome}
-              empresa={val.empresa}
-              cargo={val.cargo}
-              email={val.email}
+              <div className="contact-items">
+                <p className="contact-item">Nome: {val.nome}</p>
+                <p className="contact-item"> Empresa: {val.empresa}</p>
+                <p className="contact-item">Cargo: {val.cargo}</p>
+                <p className="contact-item">Email: {val.email}</p>
+              </div>
+              <button className="delete-btn">Deletar</button>
             </li>
           </ul>
         );
       })}
-    </div>
+    </>
   );
 }

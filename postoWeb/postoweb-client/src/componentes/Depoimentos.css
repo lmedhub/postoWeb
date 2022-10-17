@@ -1,0 +1,40 @@
+.depo-container {
+    display: inline-flex;
+    height: 600px;
+    overflow: hidden;
+}
+
+.depo-esquerda {
+    margin-left: 10rem;
+}
+
+
+.depo-slider {
+    width: 580px;
+    height: 230px;
+    border-radius: 14px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 0px 10px;
+    padding: 1rem;
+    
+}
+
+.depo-carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.depo-titulo-container {
+    display: inline-flex;
+    margin: 1rem;
+    column-gap: 1rem;
+}
+
+.depo-hr {
+    height: auto;
+    border-radius: 8px;
+    background: rgb(237, 28, 36);
+    box-shadow: rgb(237 28 36) 0px 0px 30px;
+    border: 1.5px solid rgb(237, 28, 36);
+    width: 1px; 
+}

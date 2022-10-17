@@ -21,8 +21,6 @@ export default function FacilidadeAdmin() {
     slidesToShow: 1,
     slidesToScroll: 1,
     afterChange(currentSlide) {
-      console.log("hit afterChange");
-      console.log("currentSlide: ", currentSlide)
       setCurrSlide(currentSlide)    
     },
   }
