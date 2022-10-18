@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import depovideothumb from "../assets/depo-video-thumb.jpg";
+//import depovideothumb from "../assets/depo-video-thumb.jpg";
 
 import "./Depoimentos.css";
 
@@ -20,7 +20,7 @@ export default function Depoimentos() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false
+    arrows: false,
   };
 
   return (
@@ -50,8 +50,10 @@ export default function Depoimentos() {
           </div>
         </div>
         <div className="depo-slider">
-          <button onClick={previous}> Prev Button </button>
-          <button onClick={next}> Next Button </button>
+          <div className="depo-slider-buttons">
+            <button onClick={previous}></button>
+            <button onClick={next}></button>
+          </div>
 
           <Slider {...settings} ref={(c) => (slider.current = c)}>
             <article className="depo-carousel-item">

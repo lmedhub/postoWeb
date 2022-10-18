@@ -8,15 +8,24 @@
     margin-left: 10rem;
 }
 
-
 .depo-slider {
     width: 580px;
     height: 230px;
     border-radius: 14px;
     box-shadow: rgb(0 0 0 / 16%) 0px 0px 10px;
     padding: 1rem;
-    
 }
+
+.depo-slider-buttons {
+    text-align: right;
+}
+
+.depo-slider-buttons button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
 
 .depo-carousel-item {
     display: flex;
