@@ -2,7 +2,7 @@ import React from "react";
 import AOS from 'aos';
 
 import "./DaPistaAConveniencia.css";
-import DemoModalButton from "./Modals/DemoModalButton";
+import ModalButton from "./Modals/ModalButton";
 
 import hero2stockman from "../assets/daPista-stock.jpg";
 import chartSVG from "../assets/chart-line-solid.svg";
@@ -48,7 +48,7 @@ export default function DaPistaAConveniencia() {
               </b>{" "}
               do mercado.
             </h1>
-            <DemoModalButton removePCsymbol={true} />
+            <ModalButton removePCsymbol={true} />
           </div>
         </div>
         <div className="nossos-numeros" data-aos="zoom-in">

@@ -1,3 +1,31 @@
+.demo-button {
+    border: 2px solid rgb(237, 28, 36);
+    background: rgb(237, 28, 36);
+    font-size: 1em;
+    color: white;
+    padding: 0.6em 1em;
+    border-style: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .demo-button i {
+    margin: 0 20px 0 5px;
+  }
+  
+  .demo-button:hover {
+    border: 2px solid rgb(237, 28, 36);
+    background: rgb(237, 28, 36);
+    font-size: 1em;
+    color: white;
+    padding: 0.6em 1em;
+    border-style: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 25px red;
+  }
+
+
 .revendedor-button {
     background: rgb(0, 20, 78);
     font-size: 1em;

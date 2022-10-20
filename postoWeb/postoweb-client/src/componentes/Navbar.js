@@ -2,8 +2,8 @@ import React from "react";
 import Modal from "react-modal";
 import "./Navbar.css";
 import logo from "../assets/postoweblogo.jpg";
-import RevModalButton from "./Modals/RevModalButton";
-import DemoModalButton from "./Modals/DemoModalButton";
+import ModalButton from "./Modals/ModalButton";
+
 
 Modal.setAppElement("#root");
 
@@ -27,10 +27,10 @@ export default function Navbar() {
             <a href="/#">Sobre nós</a>
           </li>
           <li>
-            <RevModalButton />
+            <ModalButton revModalButton={true} revModal={true}/>
           </li>
           <li>
-            <DemoModalButton/>
+            <ModalButton demoModal={true}/>
           </li>
         </ul>
       </nav>

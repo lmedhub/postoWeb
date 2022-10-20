@@ -1,7 +1,7 @@
 import React from "react";
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
-import DemoModalButton from "./Modals/DemoModalButton";
+import ModalButton from "./Modals/ModalButton";
 import "./Hero.css";
 import stockphotohero from '../assets/stock-photo-hero.jpeg';
 
@@ -31,7 +31,7 @@ export default function Hero() {
           Especialista em sistemas para postos de combustíveis <br /> e lojas de
           conveniência.
         </p>
-        <DemoModalButton removePCsymbol={removePCsymbol}/>
+        <ModalButton removePCsymbol={true}/>
       </div>
       <div>
         <img src={stockphotohero} alt="foto de um homem apontado o dedo para o cabeçalho da página"></img>
