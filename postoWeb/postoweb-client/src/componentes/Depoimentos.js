@@ -6,11 +6,10 @@ import "./Depoimentos.css";
 
 export default function Depoimentos() {
   const slider = useRef();
-
-  const next = () => {
+  const nextButton = () => {
     slider.current.slickNext();
   };
-  const previous = () => {
+  const previousButton = () => {
     slider.current.slickPrev();
   };
 
@@ -51,8 +50,8 @@ export default function Depoimentos() {
         </div>
         <div className="depo-slider">
           <div className="depo-slider-buttons">
-            <button onClick={previous}></button>
-            <button onClick={next}></button>
+            <button className="button" onClick={previousButton}>{"<"}</button>
+            <button className="button" onClick={nextButton}>{">"}</button>
           </div>
 
           <Slider {...settings} ref={(c) => (slider.current = c)}>
