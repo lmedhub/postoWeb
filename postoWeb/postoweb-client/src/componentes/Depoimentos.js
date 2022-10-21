@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-//import depovideothumb from "../assets/depo-video-thumb.jpg";
+import depovideothumb from "../assets/depo-video-thumb.jpg";
 
 import "./Depoimentos.css";
 
@@ -15,7 +15,7 @@ export default function Depoimentos() {
 
   var settings = {
     infinite: false,
-    dots: true,
+    dots: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -50,8 +50,12 @@ export default function Depoimentos() {
         </div>
         <div className="depo-slider">
           <div className="depo-slider-buttons">
-            <button className="button" onClick={previousButton}>{"<"}</button>
-            <button className="button" onClick={nextButton}>{">"}</button>
+            <button className="slider-button" onClick={previousButton}>
+              {"<"}
+            </button>
+            <button className="slider-button" onClick={nextButton}>
+              {">"}
+            </button>
           </div>
 
           <Slider {...settings} ref={(c) => (slider.current = c)}>
@@ -62,11 +66,9 @@ export default function Depoimentos() {
                 de qualidade e com agilidade faz toda a diferença em postos
                 24hrs, usamos o sistema 100%.”
               </p>
-              <span>XXXXX</span>
-              <div className="depoente">
-                <h3>Alexandre Lopes</h3>
-                <p>Gerente Auto Posto Guarapari</p>
-              </div>
+              <p>XXXXX</p>
+              <p>Alexandre Lopes</p>
+              <p>Gerente Auto Posto Guarapari</p>
             </article>
             <article className="depo-carousel-item">
               <p>
@@ -75,11 +77,10 @@ export default function Depoimentos() {
                 trabalhar normalmente, tirar dúvidas, acessar relatórios e tomar
                 decisões rapidamente.”
               </p>
-              <span>XXXXX</span>
-              <div className="depoente">
-                <h3>Rafael Garci</h3>
-                <p>Cliente postoWeb</p>
-              </div>
+              <p>XXXXX</p>
+
+              <p>Rafael Garci</p>
+              <p>Cliente postoWeb</p>
             </article>
             <article className="depo-carousel-item">
               <p>
@@ -90,11 +91,9 @@ export default function Depoimentos() {
                 de 11 anos e esperamos que essa parceria perdure por muito
                 tempo.”
               </p>
-              <span>XXXXX</span>
-              <div className="depoente">
-                <h3>Eduardo Luiz Mattiello</h3>
-                <p>Posto Enseada</p>
-              </div>
+              <p>XXXXX</p>
+              <p>Eduardo Luiz Mattiello</p>
+              <p>Posto Enseada</p>
             </article>
             <article className="depo-carousel-item">
               <p>
@@ -103,14 +102,15 @@ export default function Depoimentos() {
                 faz toda a diferença. O aplicativo do webPosto é um diferencial
                 perante os concorrentes que conheço.”
               </p>
-              <span>XXXXX</span>
-              <div className="depoente">
-                <h3>Ronaldo Ramos</h3>
-                <p>Autoposto Rota 22</p>
-              </div>
+              <p>XXXXX</p>
+              <p>Ronaldo Ramos</p>
+              <p>Autoposto Rota 22</p>
             </article>
           </Slider>
         </div>
+      </div>
+      <div className="depo-direita">
+              <img src={depovideothumb} alt="homem com notebook"/>
       </div>
     </div>
   );
